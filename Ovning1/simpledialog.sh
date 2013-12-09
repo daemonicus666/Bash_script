@@ -1,4 +1,4 @@
-# Världens enklaste dialog
+# The world's easiest dialogue
 # (c) Daemonicus666
 
 echo "Hello!\nType your name!"
