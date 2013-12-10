@@ -2,9 +2,7 @@
 
 1.  Vad kommer att listas ut vid följande kommando?
     *   la-la [a]*[!e] - Filer och mappar som innehåller tecknet 'a', vilka tecken som helst och inte slutar på 'e'.
-
     *   ls -la *[f-i]? - Filer och mappar som börjar på vilket tecken som helst och innehåller tecken mellan 'f' och 'i' och slutar på vilket tecken som helst.
-
     *   ls -la ????.[co] - Filer och mappar med exakt fyra valfria tecken, separeras med punkt och slutar på 'c' eller 'o'.
 
 2.  Om du vill lista alla filer som börjar på 'a' och slutar på .'c', vilket wildcard använder du då?
