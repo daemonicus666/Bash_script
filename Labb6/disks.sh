@@ -9,7 +9,7 @@ for dev in `df -H | awk '{ print $6 }' | egrep '[\/]'`;do
 done
 
 # Get disk usage
-for percent in `df -H | awk '{ print $5 }' | egrep '[0-9]' | sed 's/̣\%//g'`;do
+for percent in `df -H | awk ' { print $5 }' | egrep '[0-9]' | sed 's/\%//'`;do
     Use[$UseNr]=$percent
     ((UseNr++))
 done
