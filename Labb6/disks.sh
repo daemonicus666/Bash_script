@@ -20,7 +20,7 @@ DiskDev=0
 for i in ${Use[@]};do
     if [ $i -gt $warningRate ];then
         echo "Disk ${Disk[$DiskDev]} is ${Use[$DiskDev]}% full" \
-            `mail -s "Disk usage warning"`
+            `mail root -s "Disk usage warning"`
         ((DiskDev++))
     fi
 done
