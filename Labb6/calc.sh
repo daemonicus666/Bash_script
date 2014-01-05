@@ -14,9 +14,12 @@ printCalc(){
 printDemand(){
     read -p "Enter an integer: " number1
     read -p "Enter another integer: " number2
-    if [[ "$number1" != [0-9] ]] && [[ "$number2" != [0-9] ]];then
+    if ! [ "$number1" -eq "$number1" 2> /dev/null ];then
         printf "Need two integers\n"
         printDemand
+    elif ! [ "$number2" -eq "$number2" 2> /dev/null ]; then
+	printf "Nedd two integers\n"
+	printDemand
     else
         printCalc
     fi
