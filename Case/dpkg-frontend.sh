@@ -15,6 +15,7 @@ pkglist(){
 
     dialog --textbox /tmp/listpkg 20 50
     if [ $? -eq 0 ];then
+        clear
         main
     fi
 }
@@ -33,7 +34,7 @@ main(){
     
     # If the user pressed abort
     if [ $? -eq 1 ];then
-        clear
+        #clear
         exit 0
     fi
     
